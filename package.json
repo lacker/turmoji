@@ -1,0 +1,28 @@
+{
+  "name": "turmoji",
+  "version": "1.0.0",
+  "description": "Emoji stuff",
+  "main": "app.js",
+  "dependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "gulp-babel": "^6.1.2",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacker/turmoji.git"
+  },
+  "keywords": [
+    "emoji"
+  ],
+  "author": "Kevin Lacker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lacker/turmoji/issues"
+  },
+  "homepage": "https://github.com/lacker/turmoji#readme"
+}
