@@ -12,9 +12,12 @@ function randomEmojiName() {
 }
 
 function randomEmoji() {
-  return emoji[randomEmojiName()];
+  return emoji[randomEmojiName()].character;
 }
 
-for (let i = 0; i < 10; i++) {
+function main() {
   console.log(randomEmoji());
+  setTimeout(main, 1000);
 }
+
+main();
