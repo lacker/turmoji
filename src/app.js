@@ -7,9 +7,12 @@ for (let e in emoji) {
   allEmoji.push(e);
 }
 
-// TODO: return actual emoji
-function randomEmoji() {
+function randomEmojiName() {
   return allEmoji[Math.floor(Math.random() * allEmoji.length)];
+}
+
+function randomEmoji() {
+  return emoji[randomEmojiName()];
 }
 
 for (let i = 0; i < 10; i++) {
