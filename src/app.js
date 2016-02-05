@@ -20,6 +20,4 @@ function main() {
   setTimeout(main, 1000);
 }
 
-if (!module.parent) {
-  main();
-}
+main();
