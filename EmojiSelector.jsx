@@ -20,15 +20,15 @@ function randomEmoji() {
 class EmojiSelector extends React.Component {
   render() {
     let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
-    return emojiList.map(emoji => {
+    let parts = emojiList.map(emoji => {
       return (
         <div>
           {emoji}
         </div>
       );
     });
+    return <div>{parts}</div>
   }
-
-});
+}
 
 ReactDOM.render(<EmojiSelector/>, document.getElementById('hello'));

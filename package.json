@@ -11,10 +11,11 @@
   "devDependencies": {
     "babel-core": "^6.4.5",
     "babel-loader": "^6.2.2",
+    "babel-preset-react": "^6.3.13",
     "webpack": "^1.12.13"
   },
   "scripts": {
-    "start": "webpack-dev-server --progress --colors",
+    "start": "webpack-dev-server --progress --colors --port=7070",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
