@@ -19,7 +19,7 @@ function randomEmoji() {
 
 class EmojiSelector extends React.Component {
   render() {
-    let emojiList = 
+    let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
     return emojiList.map(emoji => {
       return (
         <div>
