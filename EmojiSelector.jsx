@@ -17,6 +17,10 @@ function randomEmoji() {
   return emoji[randomEmojiName()].character;
 }
 
+let emojiStyle = {
+  fontSize: '200%',
+};
+
 class EmojiSelector extends React.Component {
   render() {
     let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
@@ -24,7 +28,7 @@ class EmojiSelector extends React.Component {
     for (let i = 0; i < emojiList.length; i++) {
       let emoji = emojiList[i];
       parts.push(
-        <div key={i}>
+        <div style={emojiStyle} key={i}>
           {emoji}
         </div>
       );
