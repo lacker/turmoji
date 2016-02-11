@@ -18,17 +18,23 @@ function randomEmoji() {
 }
 
 let emojiStyle = {
-  fontSize: '200%',
+  fontSize: '500%',
+  float: 'left',
+  margin: '20px',
 };
 
 class EmojiSelector extends React.Component {
+  onClick(emoji) {
+    console.log(emoji);
+  }
+  
   render() {
     let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
     let parts = [];
     for (let i = 0; i < emojiList.length; i++) {
       let emoji = emojiList[i];
       parts.push(
-        <div style={emojiStyle} key={i}>
+        <div style={emojiStyle} key={i} onClick={() => this.onClick(emoji)}>
           {emoji}
         </div>
       );
