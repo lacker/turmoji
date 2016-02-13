@@ -26,6 +26,7 @@ let emojiStyle = {
 class EmojiSelector extends React.Component {
   onClick(emoji) {
     console.log(emoji);
+    renderAll();
   }
   
   render() {
@@ -42,6 +43,9 @@ class EmojiSelector extends React.Component {
   }
 }
 
-let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
-ReactDOM.render(<EmojiSelector emojiList={emojiList}/>,
-                document.getElementById('hello'));
+
+function renderAll() {
+  let emojiList = [randomEmoji(), randomEmoji(), randomEmoji()];
+  ReactDOM.render(<EmojiSelector emojiList={emojiList}/>,
+                  document.getElementById('hello'));
+}
